@@ -1,9 +1,10 @@
 const button = document.querySelector("button");
-const h1 = document.querySelector("h1");
+const h2 = document.querySelector("h2");
+const colorArea = document.querySelector(".colorBox")
 button.addEventListener('click', function () {
     const newColor = randomColor();
-    document.body.style.backgroundColor = newColor;
-    h1.innerText = newColor;
+    colorArea.style.backgroundColor = newColor;
+    h2.innerText = newColor;
 })
 
 const randomColor = () => {
