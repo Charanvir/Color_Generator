@@ -7,13 +7,33 @@
     justify-content: space-around;
 }
 
+.content {
+    display: flex;
+    justify-content: space-evenly;
+}
+
 .colorBox {
     width: 500px;
     height: 500px;
     background-color: white;
-    display: flex;
-    margin: auto;
     margin-top: 50px;
+}
+
+.history {
+    width: 500px;
+    height: 500px;
+    margin-top: 50px;
+}
+
+.history h2 {
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+#nameColors {
+    width: 200px;
+    list-style: none;
 }
 
 body h1 {

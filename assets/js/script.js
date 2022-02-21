@@ -5,6 +5,10 @@ button.addEventListener('click', function () {
     const newColor = randomColor();
     colorArea.style.backgroundColor = newColor;
     h2.innerText = newColor;
+    const list = document.createElement("Li");
+    list.innerText = randomColor();
+    document.getElementById("nameColors").appendChild(list);
+    list.style.color = newColor;
 })
 
 const randomColor = () => {
