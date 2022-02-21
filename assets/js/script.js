@@ -18,6 +18,7 @@ reset.addEventListener('click', function () {
     const resetText = document.querySelector("#nameColors")
     resetText.innerText = resetColor;
     colorArea.style.backgroundColor = "white";
+    h2.innerText = "Color RGB Value";
 })
 
 const randomColor = () => {
