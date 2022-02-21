@@ -12,6 +12,12 @@
     justify-content: space-evenly;
 }
 
+.resetButton {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+}
+
 .colorBox {
     width: 500px;
     height: 500px;

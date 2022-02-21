@@ -1,6 +1,7 @@
 const button = document.querySelector("button");
 const h2 = document.querySelector("h2");
 const colorArea = document.querySelector(".colorBox")
+const reset = document.querySelector("#reset")
 button.addEventListener('click', function () {
     const newColor = randomColor();
     colorArea.style.backgroundColor = newColor;
@@ -9,6 +10,14 @@ button.addEventListener('click', function () {
     list.innerText = randomColor();
     document.getElementById("nameColors").appendChild(list);
     list.style.color = newColor;
+})
+
+
+reset.addEventListener('click', function () {
+    const resetColor = " ";
+    const resetText = document.querySelector("#nameColors")
+    resetText.innerText = resetColor;
+    colorArea.style.backgroundColor = "white";
 })
 
 const randomColor = () => {
